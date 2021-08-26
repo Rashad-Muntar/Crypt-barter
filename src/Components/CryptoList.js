@@ -1,22 +1,31 @@
 /* eslint-disable no-use-before-define, consistent-return, arrow-body-style */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { coinsFetcher } from '../Actions';
+import { filterAction, coinsFetcher } from '../Actions/index';
+import FilterForm from './FilterForm';
 import Crypto from './Cryto';
 
 const CryptoList = () => {
-  const coinsData = useSelector((state) => state.data);
+  const coinsData = useSelector((state) => state.cryptoReducer.data);
+  const filter = useSelector((state) => state.filterReducer);
+  console.log(filter);
   console.log(coinsData);
   const dispatch = useDispatch();
+
+  const handleFilterChanger = (e) => {
+    dispatch(filterAction(e.target.value));
+  };
 
   useEffect(() => {
     dispatch(coinsFetcher());
   }, []);
 
+  const filteredCryptos = (filter !== '') ? coinsData.coins.filter((coin) => coin.name === filter) : coinsData.coins;
   return (
     <>
+      <FilterForm onCrytoFilter={handleFilterChanger} />
       {
-      coinsData.coins.map((coin) => {
+      filteredCryptos.map((coin) => {
         return (
           <Crypto
             key={coin.id}

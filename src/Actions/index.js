@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 
 export const fetchDataSuccessAction = (data) => ({
@@ -6,16 +5,14 @@ export const fetchDataSuccessAction = (data) => ({
   data,
 });
 
-export const filterAction = (data) => ({
-  type: 'DATA-FILTER',
-  data
+export const filterAction = (filter) => ({
+  type: 'CHANGE_FILTER',
+  filter,
 });
-
-
 
 export const coinsFetcher = () => async (dispatch) => {
   try {
-    const response = await axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=20');
+    const response = await axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=10');
     const coins = await response.data;
     dispatch(fetchDataSuccessAction(coins));
   } catch (error) {
