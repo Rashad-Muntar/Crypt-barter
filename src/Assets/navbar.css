@@ -12,8 +12,8 @@
     align-items: center;
 }
 
-i.icon, i.icons {
-    font-size: 1.2em;
+.footer i.icon, i.icons {
+    font-size: 1.5em;
     cursor: pointer;
     color: rgb(0, 180, 96);
 }
@@ -48,4 +48,25 @@ i.icon, i.icons {
 }
 
 
+
+@media screen and (max-width: 460px) {
+    .search{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .search{
+        width: 60%;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .search{
+        width: 60%;
+        margin-left: 20px;
+    }
+}
 

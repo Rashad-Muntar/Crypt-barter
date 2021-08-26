@@ -1,42 +1,97 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../Assets/crypto.css';
 
-const Crypto = ({ name, price }) => (
-  // <div>
-  //   <p>{name}</p>
-  //   <p>{price}</p>
-  // </div>
+const Crypto = ({
+  name, price, icon, perChange, rank, symbol,
+}) => (
 
-
-
-    <div class="ui cards">
-      <div class="card">
-        <div class="content">
-          <img class="right floated mini ui image" src="/images/avatar/large/elliot.jpg"/>
-          <div class="header">
+  <div>
+    <div className="ui cards desktop">
+      <div className="card">
+        <div className="content">
+          <img className="right floated mini ui image" alt="imga" src={icon} />
+          <div className="header">
             {name}
           </div>
-          <div class="meta">
-            {price}
+          <div className="meta">
+            $
+            {price.toFixed(3)}
           </div>
-          <div class="description">
-            Elliot requested permission to view your contact details
-          </div>
+          { perChange < 1 ? (
+            <div className="low">
+              {perChange}
+              %
+              <i className="arrow down icon" />
+            </div>
+          ) : (
+            <div className="high">
+              {perChange}
+              %
+              <i className="arrow up icon" />
+            </div>
+          )}
         </div>
-        <div class="extra content">
-          <div class="ui two buttons">
-            <div class="ui basic green button">Approve</div>
-            <div class="ui basic red button">Decline</div>
+        <div className="extra content footer">
+          <i className="bell outline icon" />
+          <div className="rank">
+            <small>rank: </small>
+            {rank}
+          </div>
+          <div className="symbol">
+            <small />
+            {symbol}
           </div>
         </div>
       </div>
     </div>
+
+    {/* for mobile */}
+    <div className="ui cards mobile">
+      <div className="card">
+        <div className="wraps">
+          <div className="left">
+            <div>
+              <i className="bell outline icon" />
+              <img className="right floated mini ui image" alt="imga" src={icon} />
+            </div>
+            <div className="symbol">{name}</div>
+          </div>
+          <div className="right">
+            <div className="pr">
+              <div className="meta">
+                $
+                {price.toFixed(3)}
+              </div>
+              <i className="circle outline icon" />
+            </div>
+            { perChange < 1 ? (
+              <div className="low">
+                {perChange}
+                %
+                <i className="arrow down icon" />
+              </div>
+            ) : (
+              <div className="high">
+                {perChange}
+                %
+                <i className="arrow up icon" />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 );
 
 Crypto.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  // detailsHandler: PropTypes.func.isRequired,
+  icon: PropTypes.string.isRequired,
+  perChange: PropTypes.string.isRequired,
+  rank: PropTypes.string.isRequired,
+  symbol: PropTypes.string.isRequired,
 };
 
 export default Crypto;

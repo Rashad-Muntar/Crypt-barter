@@ -26,20 +26,25 @@ const CryptoList = () => {
   const filteredCryptos = (filter !== '') ? coinsData.coins.filter((coin) => coin.name === filter) : coinsData.coins;
   return (
     <div className="categoryLisWrapper">
+      {/* <img src="https://cdn.dribbble.com/users/427857/screenshots/14742262/media/f9b75790a911b4a614f305e6e0902e9a.png?compress=1&resize=800x600" alt="back" /> */}
       <FilterForm onCrytoFilter={handleFilterChanger} />
-      {
-      filteredCryptos.map((coin) => {
-        return (
-          <Link to={`/details/${coin.id}`} key={coin.id}>
-            <Crypto
-              key={coin.id}
-              name={coin.name}
-              price={coin.price}
-            />
-          </Link>
-        );
-      })
-    }
+      <div className="cards-wrapper">
+        {filteredCryptos.map((coin) => {
+          return (
+            <Link to={`/details/${coin.id}`} key={coin.id}>
+              <Crypto
+                key={coin.id}
+                name={coin.name}
+                price={coin.price}
+                icon={coin.icon}
+                rank={coin.rank}
+                perChange={coin.priceChange1w}
+                symbol={coin.symbol}
+              />
+            </Link>
+          );
+        })}
+      </div>
 
     </div>
   // coinsData.data.map((coin) => (
