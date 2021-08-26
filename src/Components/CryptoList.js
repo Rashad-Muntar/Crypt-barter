@@ -1,7 +1,9 @@
 /* eslint-disable no-use-before-define, consistent-return, arrow-body-style */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { filterAction, coinsFetcher } from '../Actions/index';
+// import CryptoDetails from './CryptoDetails';
 import FilterForm from './FilterForm';
 import Crypto from './Cryto';
 
@@ -27,11 +29,13 @@ const CryptoList = () => {
       {
       filteredCryptos.map((coin) => {
         return (
-          <Crypto
-            key={coin.id}
-            name={coin.name}
-            price={coin.price}
-          />
+          <Link to={`/details/${coin.id}`} key={coin.id}>
+            <Crypto
+              key={coin.id}
+              name={coin.name}
+              price={coin.price}
+            />
+          </Link>
         );
       })
     }

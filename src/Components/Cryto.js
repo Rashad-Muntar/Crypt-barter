@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Crypto = ({ name, price, detailsHandler }) => (
+const Crypto = ({ name, price }) => (
   <div>
     <p>{name}</p>
     <p>{price}</p>
@@ -11,7 +11,7 @@ const Crypto = ({ name, price, detailsHandler }) => (
 Crypto.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  detailsHandler: PropTypes.func.isRequired
+  // detailsHandler: PropTypes.func.isRequired,
 };
 
 export default Crypto;
