@@ -1,0 +1,27 @@
+.ui.secondary.menu{
+    background-color: #03273b !important;
+    color: white;
+    font-size: 1.3em;
+}
+
+.ui.secondary.menu .wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i.icon, i.icons {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: rgb(0, 180, 96);
+}
+
+.ui.secondary.menu .active.item{
+    color: white;
+}
+
+.ui.secondary.menu .active.item:hover{
+    color: rgb(0, 180, 96);
+}

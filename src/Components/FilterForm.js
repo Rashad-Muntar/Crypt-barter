@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 // };
 
 const FilterForm = ({ onCrytoFilter }) => (
-  <input type="text" placeholder="Enter cryto name" onChange={onCrytoFilter} />
+  <input className="search" type="text" placeholder="Enter cryto name" onChange={onCrytoFilter} />
 );
 
 FilterForm.propTypes = {
