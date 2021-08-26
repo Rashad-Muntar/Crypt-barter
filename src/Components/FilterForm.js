@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../Assets/navbar.css';
 
 // const inputChangeHandler = (e) => {
 //   console.log(e.target.value);

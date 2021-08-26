@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define, consistent-return, arrow-body-style */
 import React, { useEffect } from 'react';
+import '../Assets/cryptoList.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { filterAction, coinsFetcher } from '../Actions/index';
@@ -24,7 +25,7 @@ const CryptoList = () => {
 
   const filteredCryptos = (filter !== '') ? coinsData.coins.filter((coin) => coin.name === filter) : coinsData.coins;
   return (
-    <>
+    <div className="categoryLisWrapper">
       <FilterForm onCrytoFilter={handleFilterChanger} />
       {
       filteredCryptos.map((coin) => {
@@ -40,7 +41,7 @@ const CryptoList = () => {
       })
     }
 
-    </>
+    </div>
   // coinsData.data.map((coin) => (
   //   <Crypto
   //     key={coin.id}
