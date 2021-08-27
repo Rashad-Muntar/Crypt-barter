@@ -31,28 +31,29 @@ const CryptoList = () => {
         </div>
 
         <div className="menu-items">
-        <i class="chart bar outline icon" />
+          <i className="chart bar outline icon" />
           <p>Market News</p>
         </div>
 
         <div className="menu-items">
-          <i className="qrcode icon" />
+          <i className="money bill alternate outline icon" />
           <p>Exchange</p>
         </div>
 
         <div className="menu-items">
-        <i class="bell outline icon"></i>
+          <i className="bell outline icon" />
           <p>Notification</p>
         </div>
 
         <div className="menu-items">
-        <i class="cogs icon"></i>
+          <i className="cogs icon" />
           <p>Settings</p>
         </div>
       </div>
       <div className="ten wide column main-content categoryLisWrapper">
         <div className="image-section">
           <FilterForm onCrytoFilter={handleFilterChanger} />
+          <img src="https://images.unsplash.com/photo-1626398394376-27fcbfd8ba42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" alt="header" />
         </div>
         <div className="cards-wrapper">
           {filteredCryptos.map((coin) => {
@@ -72,12 +73,16 @@ const CryptoList = () => {
           })}
         </div>
       </div>
-      <div className="three wide column right-side-bar" />
+      <div className="three wide column right-side-bar" >
+          {
+            coinsData.coins.slice(0,1).map((coin) => {
+              <div>
+                <p>{coin.name}</p>
+              </div>
+            })
+          }
+      </div>
     </div>
-
-  // <div className="categoryLisWrapper">
-
-  // </div>
   );
 };
 

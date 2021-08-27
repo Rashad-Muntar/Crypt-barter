@@ -19,7 +19,7 @@
 }
 
 .ui.secondary.menu .active.item{
-    color: white;
+    color: #fee211 !important;
 }
 
 .ui.secondary.menu .active.item:hover{
@@ -28,7 +28,7 @@
 
 .search{
     background-color: #03273b;
-    width: 30%;
+    width: 50%;
     border: none;
     border-radius: 20px;
     height: 40px;
