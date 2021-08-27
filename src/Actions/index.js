@@ -10,10 +10,10 @@ export const filterAction = (filter) => ({
   filter,
 });
 
-export const selectedAction = (crypto) => {
-  'SELECT_CRYPTO',
-  crypto;
-};
+export const selectedAction = (crypto) => ({
+  type: 'SELECT_CRYPTO',
+  crypto,
+});
 
 export const coinsFetcher = () => async (dispatch) => {
   try {
@@ -24,3 +24,15 @@ export const coinsFetcher = () => async (dispatch) => {
     console.log(error.message);
   }
 };
+
+// export const detailsFetcher = () => async (dispatch) => {
+//   const { id } = useParams();
+//   try {
+//     const response = await axios.get(`https://api.coinstats.app/public/v1/markets?coinId=${id}`);
+//     const coins = await response.data;
+//     dispatch(selectedAction(coins));
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+//   console.log(id);
+// };
