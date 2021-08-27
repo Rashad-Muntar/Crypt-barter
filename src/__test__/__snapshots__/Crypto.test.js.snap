@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StockCard DOM renders correctly 1`] = `
+<div>
+  <div
+    className="ui cards desktop"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="content"
+      >
+        <img
+          alt="imga"
+          className="right floated mini ui image"
+          src="df"
+        />
+        <div
+          className="header"
+        >
+          name
+        </div>
+        <div
+          className="meta"
+        >
+          $
+          5.000
+        </div>
+        <div
+          className="high"
+        >
+          3
+          %
+          <i
+            className="arrow up icon"
+          />
+        </div>
+      </div>
+      <div
+        className="extra content footer"
+      >
+        <i
+          className="bell outline icon"
+        />
+        <div
+          className="rank"
+        >
+          <small>
+            rank: 
+          </small>
+          f
+        </div>
+        <div
+          className="symbol"
+        >
+          <small />
+          34
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ui cards mobile"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="wraps"
+      >
+        <div
+          className="left"
+        >
+          <div>
+            <i
+              className="bell outline icon"
+            />
+            <img
+              alt="imga"
+              className="right floated mini ui image"
+              src="df"
+            />
+          </div>
+          <div
+            className="symbol"
+          >
+            name
+          </div>
+        </div>
+        <div
+          className="right"
+        >
+          <div
+            className="pr"
+          >
+            <div
+              className="meta"
+            >
+              $
+              5.000
+            </div>
+            <i
+              className="circle outline icon"
+            />
+          </div>
+          <div
+            className="high"
+          >
+            3
+            %
+            <i
+              className="arrow up icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

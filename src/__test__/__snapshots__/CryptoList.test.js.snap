@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when store is provided 1`] = `
+<div
+  className="categoryLisWrapper"
+>
+  <div
+    className="image-section"
+  >
+    <div
+      className="search"
+    >
+      <i
+        className="search icon"
+      />
+      <input
+        onChange={[Function]}
+        placeholder="Enter crypto name"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="cards-wrapper"
+  />
+</div>
+`;
