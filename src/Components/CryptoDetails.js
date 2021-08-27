@@ -33,7 +33,7 @@ const CryptoDetails = () => {
               </div>
 
               <div>
-                <i className="thumbs up outline icon" />
+                <i className="certificate icon" />
                 <p>Certified by Cryptocurency redulatory board m</p>
               </div>
 

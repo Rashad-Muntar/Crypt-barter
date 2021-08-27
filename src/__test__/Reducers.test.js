@@ -1,18 +1,18 @@
-import filterReducer from '../Reducers/FilterReducer'
-import cryptoReducer from '../Reducers/CryptoReducer'
+import filterReducer from '../Reducers/FilterReducer';
+import cryptoReducer from '../Reducers/CryptoReducer';
 
 describe('Reducers', () => {
   const action = {
-    type: "FETCH-DATA",
+    type: 'FETCH-DATA',
     data: {
       coins: [
 
-      ]
+      ],
     },
   };
 
   const action2 = {
-    type: "CHANGE_FILTER",
+    type: 'CHANGE_FILTER',
     filter: 2,
   };
 
