@@ -53,5 +53,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest-cli": "^27.1.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^17.0.2",
+    "redux-mock-store": "^1.5.4",
+    "sinon": "^11.1.2"
   }
 }

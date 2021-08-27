@@ -10,8 +10,6 @@ import Crypto from './Cryto';
 const CryptoList = () => {
   const coinsData = useSelector((state) => state.cryptoReducer.data);
   const filter = useSelector((state) => state.filterReducer);
-  console.log(filter);
-  console.log(coinsData);
   const dispatch = useDispatch();
 
   const handleFilterChanger = (e) => {
@@ -27,7 +25,6 @@ const CryptoList = () => {
     <div className="categoryLisWrapper">
       <div className="image-section">
         <FilterForm onCrytoFilter={handleFilterChanger} />
-        {/* <img src="https://images.unsplash.com/photo-1504164996022-09080787b6b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="back" /> */}
       </div>
       <div className="cards-wrapper">
         {filteredCryptos.map((coin) => {
@@ -48,20 +45,7 @@ const CryptoList = () => {
       </div>
 
     </div>
-  // coinsData.data.map((coin) => (
-  //   <Crypto
-  //     key={coin.id}
-  //     name={coin.name}
-  //     price={coin.price}
-  //   />
-  // ))
   );
 };
-
-// CryptoList.propTypes = {
-//     book: PropTypes.string.isRequired,
-//     title: PropTypes.string.isRequired,
-//     handleRemoveBook: PropTypes.func.isRequired,
-//   };
 
 export default CryptoList;
