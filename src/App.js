@@ -1,4 +1,3 @@
-import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import CryptoList from './Components/CryptoList';
 import CryptoDetails from './Components/CryptoDetails';

@@ -4,7 +4,6 @@ import '../Assets/cryptoList.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { filterAction, coinsFetcher } from '../Actions/index';
-// import CryptoDetails from './CryptoDetails';
 import FilterForm from './FilterForm';
 import Crypto from './Cryto';
 
