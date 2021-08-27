@@ -31,7 +31,7 @@ const CryptoList = () => {
         </div>
 
         <div className="menu-items">
-          <i className="qrcode icon" />
+        <i class="chart bar outline icon" />
           <p>Market News</p>
         </div>
 
@@ -41,12 +41,12 @@ const CryptoList = () => {
         </div>
 
         <div className="menu-items">
-        <i class="bullhorn icon">
+        <i class="bell outline icon"></i>
           <p>Notification</p>
         </div>
 
         <div className="menu-items">
-          <i className="qrcode icon" />
+        <i class="cogs icon"></i>
           <p>Settings</p>
         </div>
       </div>
