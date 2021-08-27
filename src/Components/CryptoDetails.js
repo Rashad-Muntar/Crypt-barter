@@ -28,10 +28,21 @@ const CryptoDetails = () => {
             </div>
             <a href={coin.websiteUrl} target="_blank" rel="noreferrer" className="webLink">Visit Website</a>
 
-            <div>
-              <i className="shield alternate icon">
-                <p>jfhdj</p>
-              </i>
+            <div className="icons-setion">
+              <div>
+                <i className="shield alternate icon safe" />
+                <p>Safe and secured, Trusted by millions</p>
+              </div>
+              
+              <div className="icons-setion">
+                <i className="thumbs up outline icon" />
+                <p>Certified by Cryptocurency redulatory board m</p>
+              </div>
+
+              <div className="icons-setion">
+              <i class="money bill alternate outline icon"></i>
+                <p>Apprioved for monitary exchange</p>
+              </div>
             </div>
             <hr className="horizonAL" />
             <p>{coin.price}</p>
