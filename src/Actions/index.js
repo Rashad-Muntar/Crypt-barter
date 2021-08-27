@@ -10,6 +10,11 @@ export const filterAction = (filter) => ({
   filter,
 });
 
+export const selectedAction = (crypto) => {
+  'SELECT_CRYPTO',
+  crypto;
+};
+
 export const coinsFetcher = () => async (dispatch) => {
   try {
     const response = await axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=48');

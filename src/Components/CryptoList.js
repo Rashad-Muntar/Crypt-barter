@@ -26,8 +26,10 @@ const CryptoList = () => {
   const filteredCryptos = (filter !== '') ? coinsData.coins.filter((coin) => coin.name === filter) : coinsData.coins;
   return (
     <div className="categoryLisWrapper">
-      {/* <img src="https://cdn.dribbble.com/users/427857/screenshots/14742262/media/f9b75790a911b4a614f305e6e0902e9a.png?compress=1&resize=800x600" alt="back" /> */}
-      <FilterForm onCrytoFilter={handleFilterChanger} />
+      <div className="image-section">
+        <FilterForm onCrytoFilter={handleFilterChanger} />
+        {/* <img src="https://images.unsplash.com/photo-1504164996022-09080787b6b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="back" /> */}
+      </div>
       <div className="cards-wrapper">
         {filteredCryptos.map((coin) => {
           return (

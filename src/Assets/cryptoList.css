@@ -11,6 +11,18 @@
     flex-wrap: wrap;
 }
 
+.image-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-section img{
+    width: 700px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 460px) {
     .cards-wrapper{
         margin: 0;

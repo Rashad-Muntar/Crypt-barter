@@ -33,19 +33,35 @@
     border-radius: 20px;
     height: 40px;
     padding: 0 20px;
-    color: white;
+    color: rgb(0, 180, 96);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.search::placeholder{
+
+
+.search input{
+    border: none;
+    background-color: transparent;
+    width: 70%;
+}
+
+.search input::placeholder{
     color: rgb(0, 180, 96);
     letter-spacing: 1px;
 }
 
 
-.search:focus{
+.search input:focus{
    outline: none;
-   background-color: #033550;
+    color: white;
 }
+
+.search input:focus input::placeholder{
+    color: white;
+    
+ }
 
 
 

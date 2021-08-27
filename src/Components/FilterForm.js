@@ -7,7 +7,11 @@ import '../Assets/navbar.css';
 // };
 
 const FilterForm = ({ onCrytoFilter }) => (
-  <input className="search" type="text" placeholder="Enter cryto name" onChange={onCrytoFilter} />
+  <div className="search">
+    <i className="search icon" />
+    <input type="text" placeholder="Enter cryto name" onChange={onCrytoFilter} />
+  </div>
+
 );
 
 FilterForm.propTypes = {
