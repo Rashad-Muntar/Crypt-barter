@@ -1,4 +1,4 @@
-.card-wrapper{
+.card-wrapper {
   background-color: #0c3f5b;
   padding: 15px 20px;
   border-top-left-radius: 10px;
@@ -7,39 +7,40 @@
   box-sizing: border-box;
   transition: 400ms;
 }
-.card-wrapper:hover{
+
+.card-wrapper:hover {
   color: #06354e;
   border-bottom-color: #fee211;
   margin-left: 5px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .icon-section {
   display: flex;
   justify-content: space-between;
 }
 
-.icon-section img{
+.icon-section img {
   width: 50px;
   height: 50px;
 }
 
-
-.icon-section .header{
+.icon-section .header {
   color: rgb(209, 216, 255);
   font-size: 2em;
   font-weight: 700;
 }
 
-.price-area .price{
-  font-size:2.5em;
+.price-area .price {
+  font-size: 2.5em;
   font-weight: 800;
   color: rgb(209, 216, 255);
   padding: 0;
   margin: 0;
 }
 
-.symbol-area{
+.symbol-area {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -50,7 +51,6 @@
   color: white;
   font-size: 2em;
 }
-
 
 .rank {
   color: white;
@@ -143,7 +143,6 @@
   .symbol {
     color: #92a7b4;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
