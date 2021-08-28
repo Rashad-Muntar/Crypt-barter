@@ -1,4 +1,4 @@
-# CRYPTOLIST
+# CRYPTLIST
 
 > This project is the final capstone for Microverse's React and Redux module with the aim of building a catalog application that consumes an API using external API', React.js and Redux for state management.
 
@@ -35,13 +35,13 @@
 
 <b>Cryplist app</b> The main goal of this project is to understand how to work with API modules using React.js and Redux for state management. This application fetches real-time data of top 16 cryptocurrency. User is able to search for crytocurrency by its name in the search form. The user can also go to the details page of each cryptocurrency by clicking on the listed cyptocurrency on the homepage.
 
-##Homepage
+### Homepage
 ![Screenshot from 2021-06-24 01-16-04](![Screenshot from 2021-08-28 18-58-09](https://user-images.githubusercontent.com/58520480/131228286-a2240aa1-1e8d-42f2-b6a3-d308fb43b7f4.png)
 
-##Crypto Currency cards
+### Crypto Currency cards
 ![Screenshot from 2021-08-28 18-58-42](https://user-images.githubusercontent.com/58520480/131228411-2f910d48-975a-4398-9d21-b71239e9cb0d.png)
 
-##Details page
+### Details page
 ![Screenshot from 2021-08-28 19-03-19](https://user-images.githubusercontent.com/58520480/131228429-e77c9b1e-6f4b-4d64-a1c0-eb19bc77f2fa.png)
 
 ## Watch the Live Version
