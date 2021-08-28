@@ -3,19 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "7.x",
-    "@babel/eslint-parser": "7.x",
-    "@babel/plugin-syntax-jsx": "7.x",
-    "@babel/preset-react": "7.x",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
-    "eslint-config-airbnb": "18.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "4.x",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,9 +16,6 @@
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
-    "stylelint-config-standard": "21.x",
-    "stylelint-csstree-validator": "1.x",
-    "stylelint-scss": "3.x",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -55,13 +43,27 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "7.x",
+    "@babel/eslint-parser": "7.x",
+    "@babel/plugin-syntax-jsx": "7.x",
+    "@babel/preset-react": "7.x",
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "18.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "4.x",
     "jest-cli": "^27.1.0",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^17.0.2",
     "redux-mock-store": "^1.5.4",
-    "sinon": "^11.1.2"
+    "sinon": "^11.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "21.x",
+    "stylelint-csstree-validator": "1.x",
+    "stylelint-scss": "3.x"
   }
 }

@@ -1,14 +1,24 @@
 import filterReducer from '../Reducers/FilterReducer';
 import cryptoReducer from '../Reducers/CryptoReducer';
 
+const mockData = {
+  data: {
+    coins: [ { crypto1: 'crypto1', ids: 1 },
+      { crypto2: 'crypto2', ids: 2},
+      { crypto3: 'crypto3', ids: 2},
+    ],
+  }
+}
+
 describe('Reducers', () => {
   const action = {
     type: 'FETCH-DATA',
     data: {
-      coins: [
-
-      ],
-    },
+    coins: [ { crypto1: 'crypto1', ids: 1 },
+      { crypto2: 'crypto2', ids: 2},
+      { crypto3: 'crypto3', ids: 2},
+    ],
+  }
   };
 
   const action2 = {
@@ -20,7 +30,11 @@ describe('Reducers', () => {
     expect(cryptoReducer([], {})).toEqual([]);
   });
 
-  it('filter reducer returns a genre id', () => {
+  it('crypto reducer has cryptocurrencies in state', () => {
+    expect(cryptoReducer({}, action)).toEqual(mockData);
+  });
+
+  it('filter reducer returns a crypto id', () => {
     expect(filterReducer('', action2)).toEqual(2);
   });
 });

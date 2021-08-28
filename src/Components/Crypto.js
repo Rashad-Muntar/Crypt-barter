@@ -5,82 +5,36 @@ import '../Assets/crypto.css';
 const Crypto = ({
   name, price, icon, perChange, rank, symbol,
 }) => (
-
-  <div>
-    <div className="ui cards desktop">
-      <div className="card">
-        <div className="content">
-          <img className="right floated mini ui image" alt="imga" src={icon} />
-          <div className="header">
-            {name}
-          </div>
-          <div className="meta">
-            $
-            {price.toFixed(3)}
-          </div>
-          { perChange < 1 ? (
-            <div className="low">
-              {perChange}
-              %
-              <i className="arrow down icon" />
-            </div>
-          ) : (
-            <div className="high">
-              {perChange}
-              %
-              <i className="arrow up icon" />
-            </div>
-          )}
-        </div>
-        <div className="extra content footer">
-          <i className="bell outline icon" />
-          <div className="rank">
-            <small>rank: </small>
-            {rank}
-          </div>
-          <div className="symbol">
-            <small />
-            {symbol}
-          </div>
-        </div>
-      </div>
+  <div className="card-wrapper">
+    <div className="icon-section">
+      <p className="header">{name}</p>
+      <img src={icon} alt="icon" />
     </div>
-
-    {/* for mobile */}
-    <div className="ui cards mobile">
-      <div className="card">
-        <div className="wraps">
-          <div className="left">
-            <div>
-              <i className="bell outline icon" />
-              <img className="right floated mini ui image" alt="imga" src={icon} />
-            </div>
-            <div className="symbol">{name}</div>
-          </div>
-          <div className="right">
-            <div className="pr">
-              <div className="meta">
-                $
-                {price.toFixed(3)}
-              </div>
-              <i className="circle outline icon" />
-            </div>
-            { perChange < 1 ? (
-              <div className="low">
-                {perChange}
-                %
-                <i className="arrow down icon" />
-              </div>
-            ) : (
-              <div className="high">
-                {perChange}
-                %
-                <i className="arrow up icon" />
-              </div>
-            )}
-          </div>
+    <div className="price-area">
+      <p className="price">
+        €
+        {price.toFixed(4)}
+      </p>
+      { perChange < 1 ? (
+        <div className="low">
+          {perChange}
+          %
+          <i className="arrow down icon" />
         </div>
-      </div>
+      ) : (
+        <div className="high">
+          {perChange}
+          %
+          <i className="arrow up icon" />
+        </div>
+      )}
+    </div>
+    <div className="symbol-area">
+      <p className="rank">
+        rank:
+        {rank}
+      </p>
+      <p className="symbol">{symbol}</p>
     </div>
   </div>
 );

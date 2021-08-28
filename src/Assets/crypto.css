@@ -1,147 +1,163 @@
-.ui.cards>.card {
-    background-color: #053b58;
-    box-shadow: none;
-    color: white;
-    border-bottom: 3px solid #fee211;
-    transition: 400ms;
-    width: 340px;
-    margin-bottom: 34px;
+.card-wrapper{
+  background-color: #0c3f5b;
+  padding: 15px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 4px solid #47dfff;
+  box-sizing: border-box;
+  transition: 400ms;
+}
+.card-wrapper:hover{
+  color: #06354e;
+  border-bottom-color: #fee211;
+  margin-left: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.icon-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-section img{
+  width: 50px;
+  height: 50px;
 }
 
 
-.ui.cards>.card:hover {
-    border-bottom: 4px solid #47dfff;
-    margin-top: 0.5px;
+.icon-section .header{
+  color: rgb(209, 216, 255);
+  font-size: 2em;
+  font-weight: 700;
 }
 
-.ui.card>.content>.header, .ui.cards>.card>.content>.header {
-    color: white;
-    font-weight: 700;
+.price-area .price{
+  font-size:2.5em;
+  font-weight: 800;
+  color: rgb(209, 216, 255);
+  padding: 0;
+  margin: 0;
 }
 
-.ui.card .meta, .ui.cards>.card .meta{
-    color: white;
-    font-size: 1.6em;
-    font-weight: 700;
+.symbol-area{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile .bell .outline .icon {
+  color: white;
+  font-size: 2em;
 }
 
 
-.mobile .bell .outline .icon{
-    color: white;
-    font-size: 2em;
+.rank {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
-.ui.card>.extra, .ui.cards>.card>.extra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.rank span {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-right: 10px;
 }
 
-.rank{
-    color: white;
-    font-size: 1.2em;
-    font-weight: 700;
+.symbol {
+  color: #96c1db;
+  font-weight: 800;
+  font-size: 1.2em;
 }
 
-.rank span{
-    color: white;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-right: 10px;
+.high {
+  color: rgb(0, 180, 96);
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
-.symbol{
-    color: #92a7b4;
-    font-weight: 800;
-    font-size: 1.2em;
-}
-
-.high{
-    color: rgb(0, 180, 96);
-}
-
-.low{
-    color: rgb(233, 27, 27);
-    font-weight: 700;
+.low {
+  color: rgb(233, 27, 27);
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 
 /* mobile card styling */
 
 .mobile {
-    display: none !important;
-
+  display: none !important;
 }
 
-
-.mobile .wraps{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px;
-
+.mobile .wraps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
 }
 
-.mobile .wraps .left > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.mobile .wraps .left > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.mobile  .pr{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.mobile .pr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 @media screen and (max-width: 460px) {
-    .desktop{
-        display: none !important;
-    }
+  .desktop {
+    display: none !important;
+  }
 
-    .mobile{
-        display: block !important;
-    }
+  .mobile {
+    display: block !important;
+  }
 
-    .ui.cards>.card {
-        margin-bottom: 10px;
-        border-radius: 15px !important;
-        width: 370px;
-    }
+  .ui.cards > .card {
+    margin-bottom: 10px;
+    border-radius: 15px !important;
+    width: 370px;
+  }
 
-    .mobile i.icon.bell.outline:before{
-        color: white;
-        font-size: 1.5em !important;
-        margin-right: 10px;
-    }
+  .mobile i.icon.bell.outline::before {
+    color: white;
+    font-size: 1.5em !important;
+    margin-right: 10px;
+  }
 
-    .mobile .ui.card .meta, .ui.cards>.card .meta{
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
+  .mobile .ui.card .meta,
+  .ui.cards > .card .meta {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
 
-   .mobile .i.icon.circle.outline:before{
-        font-size: 1.5em;
-    }
+  .mobile .i.icon.circle.outline::before {
+    font-size: 1.5em;
+  }
 
-    .symbol {
-        color: #92a7b4;
-    }
+  .symbol {
+    color: #92a7b4;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
-    .ui.cards>.card {
-        width: 306px;
-    }
+  .ui.cards > .card {
+    width: 306px;
+  }
 
-    .categoryLisWrapper {
-        width: 90%;
-    }
+  .categoryLisWrapper {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .ui.cards>.card {
-        width: 380px;
-    }
+  .ui.cards > .card {
+    width: 380px;
+  }
 }
