@@ -3,22 +3,22 @@ import cryptoReducer from '../Reducers/CryptoReducer';
 
 const mockData = {
   data: {
-    coins: [ { crypto1: 'crypto1', ids: 1 },
-      { crypto2: 'crypto2', ids: 2},
-      { crypto3: 'crypto3', ids: 2},
+    coins: [{ crypto1: 'crypto1', ids: 1 },
+      { crypto2: 'crypto2', ids: 2 },
+      { crypto3: 'crypto3', ids: 2 },
     ],
-  }
-}
+  },
+};
 
 describe('Reducers', () => {
   const action = {
     type: 'FETCH-DATA',
     data: {
-    coins: [ { crypto1: 'crypto1', ids: 1 },
-      { crypto2: 'crypto2', ids: 2},
-      { crypto3: 'crypto3', ids: 2},
-    ],
-  }
+      coins: [{ crypto1: 'crypto1', ids: 1 },
+        { crypto2: 'crypto2', ids: 2 },
+        { crypto3: 'crypto3', ids: 2 },
+      ],
+    },
   };
 
   const action2 = {
