@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define, consistent-return, arrow-body-style */
 import axios from 'axios';
 
 export const fetchDataSuccessAction = (data) => ({
@@ -24,4 +23,5 @@ export const coinsFetcher = () => async (dispatch) => {
   } catch (error) {
     return error.message;
   }
+  return null;
 };

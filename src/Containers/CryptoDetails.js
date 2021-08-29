@@ -18,7 +18,7 @@ const CryptoDetails = () => {
     coinsData.coins.map((coin) => {
       if (coin.id === id) {
         return (
-          <div className="content-wrapper">
+          <div className="content-wrapper" key={coin.id}>
             <div className="name-setion">
               <img src={coin.icon} alt="logo" className="logoImg" />
               <p className="name">{coin.name}</p>
