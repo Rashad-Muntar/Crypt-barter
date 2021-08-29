@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly when store is provided 1`] = `
+exports[`CryptoList DOM renders correctly when store is provided 1`] = `
 <div
   className="home-wrapper"
 >

@@ -43,8 +43,8 @@ Crypto.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   icon: PropTypes.string.isRequired,
-  perChange: PropTypes.string.isRequired,
-  rank: PropTypes.string.isRequired,
+  perChange: PropTypes.number.isRequired,
+  rank: PropTypes.number.isRequired,
   symbol: PropTypes.string.isRequired,
 };
 
