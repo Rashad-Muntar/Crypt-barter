@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return, consistent-return */
 import { useDispatch, useSelector } from 'react-redux';
 import '../Assets/cryptoDetails.css';
 import { useEffect } from 'react';
@@ -103,6 +102,7 @@ const CryptoDetails = () => {
           </div>
         );
       }
+      return null;
     })
   );
 };
