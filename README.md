@@ -105,6 +105,10 @@ Feel free to check the [issues page](https://github.com/Rashad-Muntar/Crypt-bart
 
 Give a ⭐️ if you like this project!
 
+### Attribution
+Coinstats API
+
+
 ## License
 
 
