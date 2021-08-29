@@ -4,8 +4,8 @@ import '../Assets/home.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { filterAction, coinsFetcher } from '../Actions/index';
-import FilterForm from './FilterForm';
-import Crypto from './Crypto';
+import FilterForm from '../Components/FilterForm';
+import Crypto from '../Components/Crypto';
 
 const CryptoList = () => {
   const coinsData = useSelector((state) => state.cryptoReducer.data);

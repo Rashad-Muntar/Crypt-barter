@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
-import CryptoList from './Home';
-import CryptoDetails from './CryptoDetails';
+import CryptoList from '../Containers/Home';
+import CryptoDetails from '../Containers/CryptoDetails';
 import Navbar from './Navbar';
 
 function App() {
