@@ -17,4 +17,5 @@ it('renders correctly when store is provided', () => {
   expect(cryptoList).toMatchSnapshot();
 });
 
+
 });
