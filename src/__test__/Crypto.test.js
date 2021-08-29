@@ -3,7 +3,6 @@ import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom/extend-expect';
 import Crypto from '../Components/Crypto';
 
-
 describe('CryptoCard DOM', () => {
   it('renders correctly', () => {
     const cryptoCard = renderer.create(
@@ -30,7 +29,6 @@ describe('CryptoCard DOM', () => {
         symbol="34"
       />,
     ).toJSON();
-    expect(cryptoCard.name).not.toBe("random");
+    expect(cryptoCard.name).not.toBe('random');
   });
 });
-

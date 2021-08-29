@@ -1,4 +1,4 @@
-/* eslint-disable array-callback-return */
+/* eslint-disable array-callback-return, consistent-return */
 import { useDispatch, useSelector } from 'react-redux';
 import '../Assets/cryptoDetails.css';
 import { useEffect } from 'react';
@@ -18,88 +18,90 @@ const CryptoDetails = () => {
   return (
     coinsData.coins.map((coin) => {
       if (coin.id === id) {
-        <div className="content-wrapper">
-          <div className="name-setion">
-            <img src={coin.icon} alt="logo" className="logoImg" />
-            <p className="name">{coin.name}</p>
-          </div>
-          <a href={coin.websiteUrl} target="_blank" rel="noreferrer" className="webLink">Visit Website</a>
-
-          <div className="icons-setion">
-            <div>
-              <i className="shield alternate icon safe" />
-              <p>Safe and secured, Trusted by millions</p>
+        return (
+          <div className="content-wrapper">
+            <div className="name-setion">
+              <img src={coin.icon} alt="logo" className="logoImg" />
+              <p className="name">{coin.name}</p>
             </div>
+            <a href={coin.websiteUrl} target="_blank" rel="noreferrer" className="webLink">Visit Website</a>
 
-            <div>
-              <i className="certificate icon" />
-              <p>Certified by Cryptocurency redulatory board m</p>
-            </div>
-
-            <div>
-              <i className="money bill alternate outline icon" />
-              <p>Apprioved for monitary exchange</p>
-            </div>
-          </div>
-          <hr className="horizonAL" />
-          <div className="details_area">
-            <p className="price">
-              $
-              {coin.price.toFixed(3)}
-            </p>
-            <p className="market">
-              Marketcap:
-              {coin.marketCap}
-            </p>
-
-            { coin.priceChange1w < 1 ? (
-              <div className="low market">
-                {coin.priceChange1w}
-                %
-                <i className="arrow down icon" />
+            <div className="icons-setion">
+              <div>
+                <i className="shield alternate icon safe" />
+                <p>Safe and secured, Trusted by millions</p>
               </div>
-            ) : (
-              <div className="high">
-                {coin.priceChange1w}
-                %
-                <i className="arrow up icon" />
+
+              <div>
+                <i className="certificate icon" />
+                <p>Certified by Cryptocurency redulatory board m</p>
               </div>
-            )}
 
-            <p className="symbol">{coin.symbol}</p>
-          </div>
+              <div>
+                <i className="money bill alternate outline icon" />
+                <p>Apprioved for monitary exchange</p>
+              </div>
+            </div>
+            <hr className="horizonAL" />
+            <div className="details_area">
+              <p className="price">
+                $
+                {coin.price.toFixed(3)}
+              </p>
+              <p className="market">
+                Marketcap:
+                {coin.marketCap}
+              </p>
 
-          <div className="top-cryptos">
-            {topCryptos.map((coin) => (
-              <Link to={`/details/${coin.id}`} key={coin.id} className="top-cryptos-card">
-
-                <div className="top-c-name-wrapper">
-                  <p className="top-c-name">{coin.name}</p>
-                  <img src={coin.icon} alt="logo" className="" />
+              { coin.priceChange1w < 1 ? (
+                <div className="low market">
+                  {coin.priceChange1w}
+                  %
+                  <i className="arrow down icon" />
                 </div>
+              ) : (
+                <div className="high">
+                  {coin.priceChange1w}
+                  %
+                  <i className="arrow up icon" />
+                </div>
+              )}
 
-                <p className="top-c-price">
-                  $
-                  {coin.price.toFixed(3)}
-                </p>
-                { coin.priceChange1w < 1 ? (
-                  <div className="low market">
-                    {coin.priceChange1w}
-                    %
-                    <i className="arrow down icon" />
-                  </div>
-                ) : (
-                  <div className="high">
-                    {coin.priceChange1w}
-                    %
-                    <i className="arrow up icon" />
-                  </div>
-                )}
+              <p className="symbol">{coin.symbol}</p>
+            </div>
 
-              </Link>
-            ))}
+            <div className="top-cryptos">
+              {topCryptos.map((coin) => (
+                <Link to={`/details/${coin.id}`} key={coin.id} className="top-cryptos-card">
+
+                  <div className="top-c-name-wrapper">
+                    <p className="top-c-name">{coin.name}</p>
+                    <img src={coin.icon} alt="logo" className="" />
+                  </div>
+
+                  <p className="top-c-price">
+                    $
+                    {coin.price.toFixed(3)}
+                  </p>
+                  { coin.priceChange1w < 1 ? (
+                    <div className="low market">
+                      {coin.priceChange1w}
+                      %
+                      <i className="arrow down icon" />
+                    </div>
+                  ) : (
+                    <div className="high">
+                      {coin.priceChange1w}
+                      %
+                      <i className="arrow up icon" />
+                    </div>
+                  )}
+
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>;
+        );
       }
     })
   );

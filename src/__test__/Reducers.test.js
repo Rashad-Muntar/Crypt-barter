@@ -30,8 +30,6 @@ describe('Reducers', () => {
     expect(cryptoReducer([], {})).toEqual([]);
   });
 
-
-
   it('crypto reducer has an initial empty content', () => {
     expect(cryptoReducer([], {})).not.toEqual(undefined);
   });

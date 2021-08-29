@@ -6,16 +6,13 @@ import CryptoList from '../Containers/Home';
 import rootReducer from '../Reducers/index';
 
 describe('CryptoList DOM', () => {
-
-it('renders correctly when store is provided', () => {
-  const store = createStore(rootReducer);
-  const cryptoList = renderer.create(
-    <Provider store={store}>
-      <CryptoList />
-    </Provider>,
-  ).toJSON();
-  expect(cryptoList).toMatchSnapshot();
-});
-
-
+  it('renders correctly when store is provided', () => {
+    const store = createStore(rootReducer);
+    const cryptoList = renderer.create(
+      <Provider store={store}>
+        <CryptoList />
+      </Provider>,
+    ).toJSON();
+    expect(cryptoList).toMatchSnapshot();
+  });
 });
