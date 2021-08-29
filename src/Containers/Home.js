@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define, consistent-return, arrow-body-style */
 import React, { useEffect } from 'react';
 import '../Assets/home.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -56,46 +55,42 @@ const CryptoList = () => {
           <img src="https://images.unsplash.com/photo-1626398394376-27fcbfd8ba42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" alt="header" />
         </div>
         <div className="all-cards-wrapper">
-          {filteredCryptos.map((coin) => {
-            return (
-              <Link to={`/details/${coin.id}`} key={coin.id} className="a-card-wrapper">
-                <Crypto
-                  key={coin.id}
-                  name={coin.name}
-                  price={coin.price}
-                  icon={coin.icon}
-                  rank={coin.rank}
-                  perChange={coin.priceChange1w}
-                  symbol={coin.symbol}
-                />
-              </Link>
-            );
-          })}
+          {filteredCryptos.map((coin) => (
+            <Link to={`/details/${coin.id}`} key={coin.id} className="a-card-wrapper">
+              <Crypto
+                key={coin.id}
+                name={coin.name}
+                price={coin.price}
+                icon={coin.icon}
+                rank={coin.rank}
+                perChange={coin.priceChange1w}
+                symbol={coin.symbol}
+              />
+            </Link>
+          ))}
         </div>
       </div>
       <div className="right-side-bar">
         {
-            coinsData.coins.slice(0, 1).map((coin) => {
-              return (
-                <div className="ui cards" key={coin.id}>
-                  <div className="card">
-                    <i className="assistive listening systems icon" />
-                    <div className="content">
-                      <img className="right floated mini ui image" alt="imga" src={coin.icon} />
-                      <div className="header">{coin.name}</div>
-                      <div className="meta">
-                        $
-                        {coin.price.toFixed(3)}
-                      </div>
-                      <div className="description">
-                        {coin.symbol}
-                      </div>
-                      <a href={coin.websiteUrl} target="_blank" rel="noreferrer" className="webLink">Visit Website</a>
+            coinsData.coins.slice(0, 1).map((coin) => (
+              <div className="ui cards" key={coin.id}>
+                <div className="card">
+                  <i className="assistive listening systems icon" />
+                  <div className="content">
+                    <img className="right floated mini ui image" alt="imga" src={coin.icon} />
+                    <div className="header">{coin.name}</div>
+                    <div className="meta">
+                      $
+                      {coin.price.toFixed(3)}
                     </div>
+                    <div className="description">
+                      {coin.symbol}
+                    </div>
+                    <a href={coin.websiteUrl} target="_blank" rel="noreferrer" className="webLink">Visit Website</a>
                   </div>
                 </div>
-              );
-            })
+              </div>
+            ))
           }
       </div>
     </div>
