@@ -59,6 +59,7 @@ Visit [Live Demo](https://mysterious-coast-59330.herokuapp.com/)
 - Webpack
 - Heroku
 - Jest
+- Semantic UI
 - coinstats API
 
 ## Getting API from Coinstats
