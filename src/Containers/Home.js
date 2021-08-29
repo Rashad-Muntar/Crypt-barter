@@ -80,7 +80,7 @@ const CryptoList = () => {
                     <img className="right floated mini ui image" alt="imga" src={coin.icon} />
                     <div className="header">{coin.name}</div>
                     <div className="meta">
-                      $
+                      €
                       {coin.price.toFixed(3)}
                     </div>
                     <div className="description">

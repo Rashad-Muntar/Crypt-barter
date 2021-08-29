@@ -44,7 +44,7 @@ const CryptoDetails = () => {
             <hr className="horizonAL" />
             <div className="details_area">
               <p className="price">
-                $
+                €
                 {coin.price.toFixed(3)}
               </p>
               <p className="market">
@@ -79,7 +79,7 @@ const CryptoDetails = () => {
                   </div>
 
                   <p className="top-c-price">
-                    $
+                    €
                     {coin.price.toFixed(3)}
                   </p>
                   { coin.priceChange1w < 1 ? (
