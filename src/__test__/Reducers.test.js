@@ -30,11 +30,25 @@ describe('Reducers', () => {
     expect(cryptoReducer([], {})).toEqual([]);
   });
 
+
+
+  it('crypto reducer has an initial empty content', () => {
+    expect(cryptoReducer([], {})).not.toEqual(undefined);
+  });
+
   it('crypto reducer has cryptocurrencies in state', () => {
     expect(cryptoReducer({}, action)).toEqual(mockData);
   });
 
+  it('crypto reducer has cryptocurrencies in state', () => {
+    expect(cryptoReducer({}, action)).not.toEqual({});
+  });
+
   it('filter reducer returns a crypto id', () => {
     expect(filterReducer('', action2)).toEqual(2);
+  });
+
+  it('filter reducer returns a crypto id', () => {
+    expect(filterReducer('', action2)).not.toEqual(0);
   });
 });
