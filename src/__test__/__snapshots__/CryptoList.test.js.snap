@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CryptoList DOM renders correctly when store is provided 1`] = `
+<div
+  className="home-wrapper"
+>
+  <div
+    className="left-side-bar"
+  >
+    <div
+      className="menu-items"
+    >
+      <i
+        className="qrcode icon"
+      />
+      <p>
+        Home
+      </p>
+    </div>
+    <div
+      className="menu-items"
+    >
+      <i
+        className="chart bar outline icon"
+      />
+      <p>
+        Market News
+      </p>
+    </div>
+    <div
+      className="menu-items"
+    >
+      <i
+        className="money bill alternate outline icon"
+      />
+      <p>
+        Exchange
+      </p>
+    </div>
+    <div
+      className="menu-items"
+    >
+      <i
+        className="bell outline icon"
+      />
+      <p>
+        Notification
+      </p>
+    </div>
+    <div
+      className="menu-items"
+    >
+      <i
+        className="cogs icon"
+      />
+      <p>
+        Settings
+      </p>
+    </div>
+  </div>
+  <div
+    className="main-content"
+  >
+    <div
+      className="image-section"
+    >
+      <div
+        className="search"
+      >
+        <i
+          className="search icon"
+        />
+        <input
+          onChange={[Function]}
+          placeholder="Enter crypto name"
+          type="text"
+        />
+      </div>
+      <img
+        alt="header"
+        src="https://images.unsplash.com/photo-1626398394376-27fcbfd8ba42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+      />
+    </div>
+    <div
+      className="all-cards-wrapper"
+    />
+  </div>
+  <div
+    className="right-side-bar"
+  />
+</div>
+`;

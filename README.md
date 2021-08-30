@@ -33,6 +33,7 @@
 
 <br/>
 
+### Homepage
 <b>Cryplist app</b> The main goal of this project is to understand how to work with API modules using React.js and Redux for state management. This application fetches real-time data of top 16 cryptocurrency. User is able to search for crytocurrency by its name in the search form. The user can also go to the details page of each cryptocurrency by clicking on the listed cyptocurrency on the homepage.
 
 ### Homepage
@@ -44,9 +45,9 @@
 ### Details page
 ![Screenshot from 2021-08-28 19-03-19](https://user-images.githubusercontent.com/58520480/131228429-e77c9b1e-6f4b-4d64-a1c0-eb19bc77f2fa.png)
 
-## Watch the Live Version
+## Live Demo
 
-[Live Demo](https://mysterious-coast-59330.herokuapp.com/)
+Visit [Live Demo](https://mysterious-coast-59330.herokuapp.com/)
 
 ### Prerequisites
 
@@ -56,6 +57,9 @@
 - Git
 - NodeJS
 - Webpack
+- Heroku
+- Jest
+- Semantic UI
 - coinstats API
 
 ## Getting API from Coinstats
@@ -64,8 +68,8 @@ Coinstats API is an open API with no requirement for API key
 - Copy the global endpoint
 - Use API in the application
 
-## Getting Started
-1. Open Terminal.
+## How to clone Repo
+1. Open your Terminal.
 2. Navigate to your desired location to download the contents of this repository.
 3. Copy and paste the following code into the Terminal :
    ```bash
@@ -79,11 +83,6 @@ Coinstats API is an open API with no requirement for API key
 6. In develoment mode run 
     ```bash
     npm start
-    ```
-    This will allow you to watch changes in entry files
-7. Run the unit tests and make sure they all pass
-    ```bash
-    npm run test
     ```
 
 ### Usage
@@ -106,6 +105,10 @@ Feel free to check the [issues page](https://github.com/Rashad-Muntar/Crypt-bart
 ### Show your support
 
 Give a ⭐️ if you like this project!
+
+### Attribution
+Coinstats API
+
 
 ## License
 

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Renders Filter form component 1`] = `
+<div
+  className="search"
+>
+  <i
+    className="search icon"
+  />
+  <input
+    onChange={[Function]}
+    placeholder="Enter crypto name"
+    type="text"
+  />
+</div>
+`;

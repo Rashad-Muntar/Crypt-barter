@@ -1,0 +1,167 @@
+.left-side-bar {
+  border-right: 1px solid rgb(36, 40, 63);
+  padding: 100px 0 !important;
+  width: 20% !important;
+}
+
+.left-side-bar .menu-items {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  transition: 500ms;
+  margin-bottom: 45px;
+}
+
+.left-side-bar .menu-items:hover {
+  background-color: #092636;
+  cursor: pointer;
+}
+
+.left-side-bar i.icon,
+i.icons {
+  color: #818181;
+  font-size: 2em;
+}
+
+.left-side-bar .menu-items:hover i.icon,
+i.icons {
+  color: rgb(0, 180, 96);
+}
+
+.left-side-bar .menu-items p {
+  color: #818181;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.all-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 34px;
+}
+
+.a-card-wrapper {
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+.right-side-bar {
+  border-left: 1px solid rgb(36, 40, 63);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.right-side-bar .ui.cards > .card {
+  background-color: #03273b !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+  height: 400px;
+  width: 250px;
+}
+
+.right-side-bar .ui.cards > .card .description {
+  background-color: #fee211 !important;
+  border-radius: 30px;
+  padding: 10px 25px;
+  margin: 20px 0;
+}
+
+.right-side-bar .ui.cards > .card .header {
+  margin: 30px 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #47dfff;
+}
+
+.right-side-bar .ui.cards > .card .meta {
+  margin: 30px 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #818181;
+}
+
+.right-side-bar .ui.cards > .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-side-bar .ui.cards > .card i.icon,
+i.icons {
+  font-size: 6em;
+  color: rgb(0, 180, 96);
+}
+
+.right-side-bar .webLink {
+  background-color: #003a58;
+  padding: 5px 15px;
+  color: white;
+}
+
+.main-crypto {
+  background-color: #03273b;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.image-section img {
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 90%;
+}
+
+.home-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-content {
+  width: 53% !important;
+}
+
+@media screen and (max-width: 460px) {
+  .right-side-bar {
+    display: none !important;
+  }
+
+  .left-side-bar {
+    display: none !important;
+  }
+
+  .image-section img {
+    width: 344px;
+  }
+
+  .main-content {
+    width: 100% !important;
+  }
+
+  .a-card-wrapper {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .all-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 10px;
+  }
+}

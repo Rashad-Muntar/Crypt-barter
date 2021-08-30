@@ -1,0 +1,160 @@
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 3em;
+  color: white;
+}
+
+.name-setion {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.name-setion .logoImg {
+  margin-right: 15px;
+}
+
+.webLink {
+  background-color: #47dfff;
+  border-bottom: 2px solid #fee211;
+  border-radius: 5px;
+  padding: 12px 40px;
+  color: #053b58;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.icons-setion {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-setion i.icon,
+i.icons {
+  font-size: 2.4em;
+  color: #818181;
+  opacity: 0.9;
+}
+
+.icons-setion p {
+  color: #818181;
+  opacity: 0.9;
+}
+
+.details_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details_area .price {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #c4c4c4;
+}
+
+.details_area .market {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #c4c4c4;
+}
+
+.details_area .low {
+  color: rgb(233, 27, 27);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.details_area .high {
+  color: rgb(0, 180, 96);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.details_area .symbol {
+  color: #92a7b4;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.top-cryptos {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+}
+
+.top-cryptos .top-cryptos-card {
+  height: 100%;
+  width: 16.7%;
+  border: 1px solid rgb(163, 165, 211);
+  background-color: #c7c9d6;
+  padding: 3px 10px;
+}
+
+.top-c-name {
+  font-weight: 800;
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+  color: #0c3f5b;
+}
+
+.top-c-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-c-name-wrapper img {
+  width: 20px;
+}
+
+.top-c-price {
+  color: #0c3f5b;
+  font-weight: 900;
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 460px) {
+  .details_area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-wrapper {
+    width: 93%;
+  }
+
+  .top-cryptos {
+    flex-wrap: wrap;
+  }
+
+  .top-cryptos .top-cryptos-card {
+    width: 49%;
+  }
+
+  .details_area .market {
+    font-size: 1.3em;
+  }
+}
